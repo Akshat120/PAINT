@@ -98,13 +98,13 @@ function fill(row,col,drop,color)
         if(present_color==color)
         {
             paint(r,c,drop);
-            fill(r-1,c-1,drop,color);
+            //fill(r-1,c-1,drop,color);
             fill(r-1,c,drop,color);
-            fill(r-1,c+1,drop,color);
-            fill(r,c-1,drop,color);
-            fill(r+1,c+1,drop,color);
+            //fill(r-1,c+1,drop,color);
+            fill(r,c+1,drop,color);
+            //fill(r+1,c+1,drop,color);
             fill(r+1,c,drop,color);
-            fill(r+1,c-1,drop,color);
+            //fill(r+1,c-1,drop,color);
             fill(r,c-1,drop,color);
         }        
     } 
@@ -150,7 +150,8 @@ $( '#wrapper' ).on( 'mousedown', '.cell', function () {
         var row    = Math.floor(index/size);
         var col    = Math.floor(index%size);
         var color  = $(this).css("background-color");
-        fill(row,col,drop,color);
+        
+        if(drop!=color) fill(row,col,drop,color);
     }
 });
 
