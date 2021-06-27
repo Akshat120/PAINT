@@ -100,9 +100,15 @@ function fill(row,col,drop,color)
             paint(r,c,drop);
             //fill(r-1,c-1,drop,color);
             fill(r-1,c,drop,color);
+<<<<<<< HEAD
             //fill(r-1,c+1,drop,color);
             fill(r,c+1,drop,color);
             //fill(r+1,c+1,drop,color);
+=======
+            fill(r-1,c+1,drop,color);
+            fill(r,c+1,drop,color);
+            fill(r+1,c+1,drop,color);
+>>>>>>> 0bbd14cfd3d2649f3f4f0b14f088640e0614f75c
             fill(r+1,c,drop,color);
             //fill(r+1,c-1,drop,color);
             fill(r,c-1,drop,color);
