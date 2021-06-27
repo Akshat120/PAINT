@@ -101,7 +101,7 @@ function fill(row,col,drop,color)
             fill(r-1,c-1,drop,color);
             fill(r-1,c,drop,color);
             fill(r-1,c+1,drop,color);
-            fill(r,c-1,drop,color);
+            fill(r,c+1,drop,color);
             fill(r+1,c+1,drop,color);
             fill(r+1,c,drop,color);
             fill(r+1,c-1,drop,color);
